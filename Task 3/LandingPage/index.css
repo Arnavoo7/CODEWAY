@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Protest Riot", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: radial-gradient(
+    circle,
+    #3e5444,
+    #304a44,
+    #293f41,
+    #273439,
+    #25292e,
+    #25292e,
+    #25292e,
+    #25292e,
+    #273439,
+    #293f41,
+    #304a44,
+    #3e5444
+  );
+}
+
+/* HEADER-STARTS */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  z-index: 1;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(50px);
+  z-index: -1;
+}
+
+header img {
+  position: absolute;
+  width: 18rem;
+  height: auto;
+  top: -40%;
+}
+
+#navlinks-2 a {
+  cursor: pointer;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  color: gray;
+  margin-left: 2.5rem;
+}
+
+#navlinks-2 a:hover {
+  color: whitesmoke;
+}
+
+#navlinks-1 {
+  margin-right: 50px;
+  margin-left: 2rem;
+  flex: 1;
+}
+
+#navlinks-2 a {
+  margin-left: 0;
+  margin-right: 2rem;
+  font-size: 103%;
+}
+
+#navlinks-1 a {
+  margin-left: 0;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.icon {
+  /* position: absolute; */
+  font-size: 27px;
+  display: none;
+  color: whitesmoke;
+}
+
+#check {
+  display: none;
+}
+
+header h4:hover {
+  color: green;
+}
+
+/* HEADER-ENDS */
+
+/* MAIN STARTS */
+
+.slider {
+  position: relative;
+  /* margin-top: 100px; */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.item {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  text-align: justify;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 43px;
+  transition: 0.5s;
+  left: calc(47% - 110px);
+  top: 38%;
+  background-color: #d2d8d6;
+  background-image: linear-gradient(315deg, #d2d8d6 0%, #dce8e0 74%);
+  box-shadow: 0 0 20px 10px rgba(97, 240, 133, 0.3);
+}
+
+.item h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.item p {
+  background-color: lightgray;
+  color: gray;
+  border-radius: 7px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#next {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+}
+
+#prev {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+}
+
+#prev,
+#next {
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: xxx-large;
+  font-family: monospace;
+  font-weight: bold;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+#prev:hover,
+#next:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#sd1 {
+  position: absolute;
+  top: -45%;
+  left: 30%;
+  width: 55%;
+}
+
+#sd2 {
+  position: absolute;
+  top: -50.5%;
+  left: 25%;
+  width: 68%;
+}
+
+#sd3 {
+  position: absolute;
+  top: -43%;
+  left: 25%;
+  width: 73%;
+}
+
+#sd4 {
+  position: absolute;
+  top: -47%;
+  left: 27%;
+  width: 100%;
+  height: 70%;
+}
+
+#sd5 {
+  position: absolute;
+  top: -43%;
+  left: 50%;
+  width: 71%;
+  height: 93%;
+}
+
+#sd6 {
+  position: absolute;
+  top: -50%;
+  left: -35%;
+  width: 80%;
+  height: 88%;
+}
+
+#sd7 {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 117%;
+  height: 84%;
+}
+
+#sd8 {
+  position: absolute;
+  top: -45%;
+  left: 8%;
+  width: 85%;
+  height: 68%;
+}
+
+#sd9 {
+  position: absolute;
+  top: -41%;
+  left: -33%;
+  width: 92%;
+  height: 88%;
+}
+
+#sd10 {
+  position: absolute;
+  top: -47%;
+  left: 49%;
+  width: 88%;
+  height: 95%;
+}
+
+/* MAIN ENDS */
+
+/* #right-side-form {
+  position: absolute;
+  background-color: black;
+  top: 50%;
+  left: 70%;
+  padding: 10px;
+}
+
+#pklogo {
+  position: absolute;
+  top: 20%;
+  left: 65%;
+  width: 13rem;
+  height: 8rem;
+}
+
+#pwc-logo {
+  width: 17rem;
+  height: 13rem;
+} */
+
+/* FOOTER-STARTS */
+#foot-msg {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(40px);
+  letter-spacing: 2.5px;
+}
+/* FOOTER-ENDS */
+
+/* MEDIA-QUERIES */
+@media (max-width: 992px) {
+  header {
+    padding: 1.3rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: 5.5vw;
+    height: auto;
+  }
+
+  .icon {
+    display: inline-flex;
+  }
+
+  .icon #close-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icon #menu-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icon #close-icon {
+    display: block;
+  }
+
+  #navlinks-2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    height: 0;
+    width: 100%;
+    transition: 0.3s ease;
+  }
+
+  #check:checked ~ #navlinks-2 {
+    height: 13rem;
+  }
+
+  #navlinks-2 a {
+    display: none;
+    margin: 1.3rem 0;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  #check:checked ~ #navlinks-2 a {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  header img {
+    width: 10vw;
+    height: auto;
+  }
+}

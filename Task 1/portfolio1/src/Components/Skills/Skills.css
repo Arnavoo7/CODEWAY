@@ -1,0 +1,109 @@
+#skills{
+    /* height: 100vh; */
+    width: 100%;
+    /* background-color: #f9fcff;
+    background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%); */
+    position: relative;
+
+    background-repeat: round;
+    
+}
+
+:root .hr-style{
+    
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+        to right,
+        transparent,
+        var(--hr-color) calc(50% - var(--hr-line-offset)),
+        var(--hr-color) calc(50% + var(--hr-line-offset)),
+        transparent
+    );
+    
+    
+}
+
+/* #skills-section-starts */
+
+#skills-title{
+
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-family: 'Tektur', sans-serif;
+
+}
+
+#skills-center-component{
+    display: flex;
+    /* border: 2px solid black; */
+    /* border-radius: 20px ; */
+    height: 60vh;
+    margin: 65px;
+    /* background-color: antiquewhite; */
+    overflow: auto;
+
+}
+
+
+#skills-category-button{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* margin-top: 30px; */
+    border-right: 2.5px solid #943251;
+
+}
+
+.active-indicator{
+    /* border-radius: 7px; */
+    padding: 3.6vh;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Tektur', sans-serif;
+    font-weight: bolder;
+    border: none;
+    border-bottom-left-radius: 18px;
+    transition: background-color 0.3s;
+    background-color: whitesmoke;
+
+}
+
+
+.active {
+    background-color: #943251;
+    color: white;
+  }
+
+
+#skills-category-button :hover{
+    background-color: #ffb7af;
+    
+ 
+}
+
+#skills-category-button :active{
+    background-color: #943251;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow during active state */
+  transform: translateY(1px); 
+}
+
+
+#skills-component-change-on-category-button-press{
+    flex: 4;
+    margin-left: 50px;
+    background-color: whitesmoke;
+    border-radius: 21px;
+    /* border-top: 4px solid black; */
+    border-bottom: 3px solid grey;
+    border-right: 1.5px solid rgb(189, 189, 189);
+
+
+}
+
+
+
+/* #skills-section-ends */
+
+

@@ -1,0 +1,367 @@
+#center {
+  /* background-color: orange; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 67vh;
+  width: 95vw;
+  padding: 2vw;
+  position: relative;
+}
+
+#left {
+  position: absolute;
+  flex: 2;
+  top: 5vh;
+  /* background-color: blueviolet; */
+}
+
+#left h2 {
+  font-size: 3vw;
+  /* width: 70%; */
+  margin-left: 8vw;
+  line-height: 8vh;
+
+  /** TEXT GRADIENT */
+  background: #9d2f3f;
+  background: linear-gradient(to top left, #9d2f3f 100%, #ef7378 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: "Tektur", sans-serif;
+}
+
+#right {
+  /* background-color: brown; */
+  flex: 1;
+}
+
+/* boy-image */
+
+#right img {
+  position: absolute;
+  width: 24vw;
+  height: 70vh;
+  top: 2vh;
+  right: 17%;
+  animation: boy-anime ease 3s backwards;
+}
+
+/* Circle Animation */
+
+#java-circle {
+  position: absolute;
+  border-radius: 10%;
+  width: 150px;
+  height: 100px;
+  right: 11%;
+  top: 10%;
+  animation: java-circle-anime-slideLeft ease-out 3s backwards;
+  animation-delay: 1s;
+}
+
+#spring-circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 230px;
+  height: 130px;
+  right: 4%;
+  top: 33%;
+  animation: spring-circle-anime-slideLeft ease-out 3s backwards;
+  animation-delay: 2s;
+}
+
+#react-circle {
+  position: absolute;
+  border-radius: 30%;
+  width: 95px;
+  right: 13%;
+  top: 60%;
+  animation: react-circle-rotate-anime linear 20s infinite;
+  animation-delay: 3s;
+}
+
+#circle-1 {
+  position: absolute;
+  right: 38%;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #8a293a;
+  animation: circle-1-anime linear 7s infinite;
+  animation-delay: 4s;
+}
+
+#circle-2 {
+  position: absolute;
+  right: 25%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ef8c74;
+  animation: circle-2-anime linear 8s infinite;
+  animation-delay: 3s;
+}
+
+#circle-3 {
+  position: absolute;
+  right: 40%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f4a497;
+  animation: circle-2-anime linear 11s infinite;
+  animation-delay: 1s;
+}
+
+#circle-4 {
+  position: absolute;
+  right: 20%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #853957;
+  animation: circle-2-anime linear 6s infinite;
+  animation-delay: 2s;
+}
+
+#circle-5 {
+  position: absolute;
+  right: 35%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #8a293a;
+  animation: circle-1-anime linear 7s infinite;
+  animation-delay: 4s;
+}
+
+#circle-6 {
+  position: absolute;
+  right: 25%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #8a293a;
+  animation: circle-1-anime linear 7s infinite;
+  animation-delay: 5s;
+}
+
+#circle-7 {
+  position: absolute;
+  right: 34%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #8a293a;
+  animation: circle-7-anime linear 7s infinite;
+  animation-delay: 3s;
+}
+
+#circle-8 {
+  position: absolute;
+  right: 29%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #8a293a;
+  animation: circle-8-anime linear 7s infinite;
+  animation-delay: 4s;
+}
+
+/* ROCKS */
+
+#rocks-1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 34%;
+  bottom: 11%;
+  animation: rocks-1-anime linear 15s infinite;
+  animation-delay: 19s;
+}
+
+#rocks-2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 26%;
+  transform: rotate(180deg);
+  animation: rocks-2-anime linear 25s infinite;
+  animation-delay: 8s;
+}
+
+#rocks-3 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 18%;
+  transform: rotate(95deg);
+}
+
+/*  TECH CIRCLE ANIME */
+
+@keyframes java-circle-anime-slideLeft {
+  0% {
+    transform: translateX(10vw);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
+}
+
+@keyframes spring-circle-anime-slideLeft {
+  0% {
+    transform: translateX(10vw);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
+}
+
+@keyframes react-circle-rotate-anime {
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes circle-1-anime {
+  0% {
+    transform: translateY(0vh);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-40vh);
+    opacity: 0;
+  }
+}
+
+@keyframes circle-2-anime {
+  0% {
+    transform: translateY(0vh);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-60vh);
+    opacity: 0;
+  }
+}
+
+@keyframes circle-7-anime {
+  0% {
+    transform: translateY(0vh);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-70vh);
+    opacity: 0;
+  }
+}
+
+@keyframes circle-8-anime {
+  0% {
+    transform: translateY(0vh);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+@keyframes quad-1-anime {
+  0% {
+    transform: translateY(-1vh);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-45vh);
+    opacity: 0;
+  }
+}
+
+/* ROCKS-ANIME */
+
+@keyframes rocks-1-anime {
+  0% {
+    transform: translateY(-1vh);
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-60vh);
+    opacity: 0;
+  }
+}
+
+@keyframes rocks-2-anime {
+  0% {
+    transform: translateY(-1vh);
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-70vh);
+    opacity: 0;
+  }
+}
+
+@keyframes boy-anime {
+  0% {
+    transform: translateY(15vw);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0vw);
+    opacity: 1;
+  }
+}

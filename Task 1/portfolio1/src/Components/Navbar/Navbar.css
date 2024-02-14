@@ -1,0 +1,99 @@
+#logo{
+    font-size: 2.5vw;
+    animation: slideRight 1s ease forwards;
+    margin-left: 3vw;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vw 1.5vw;
+    /* margin: 1vw 1vw; */
+    width: 95vw;
+    /* background-color: aqua; */
+}
+
+#nav-links{
+    display: flex;
+    gap: 20px;
+
+}
+
+#nav-links h4{
+    padding: 10px;
+    border: 1px solid #000000a8;
+    border-radius: 50px;
+    font-size: 18px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+    
+}
+
+#navLink-1-anime{
+    animation: slideDown 1s ease forwards;
+}
+
+#navLink-2-anime{
+    animation: slideDown 1.5s ease forwards;
+}
+
+#navLink-3-anime{
+    animation: slideDown 2s ease forwards;
+}
+
+#nav-links h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+#nav-links h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav-links h4 a{
+    padding: 17px;
+    text-decoration: none;
+    color: #131212ad;
+    z-index: 9;
+    position: relative;
+}
+
+#nav-links h4:hover a{
+    color: #fff;
+}
+
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-10vw);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0vh);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown{
+    0%{
+        transform: translateY(-10vw);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}

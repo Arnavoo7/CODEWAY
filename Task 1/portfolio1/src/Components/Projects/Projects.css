@@ -1,0 +1,59 @@
+#projects {
+  height: 100vh;
+  width: 100%;
+  /* background-color: #f9fcff;
+    background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%); */
+  position: relative;
+}
+
+:root .hr-style {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right,
+    transparent,
+    var(--hr-color) calc(50% - var(--hr-line-offset)),
+    var(--hr-color) calc(50% + var(--hr-line-offset)),
+    transparent
+  );
+}
+
+#projects-title {
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-family: "Tektur", sans-serif;
+}
+
+/* MAIN STARTS */
+
+.swiper {
+  width: 80%;
+  height: 70vh;
+  border-radius: 9px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* MAIN ENDS */
+
+video {
+  width: 100%;
+  height: auto; /* This maintains the aspect ratio of the video */
+}

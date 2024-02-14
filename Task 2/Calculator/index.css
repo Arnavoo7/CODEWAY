@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: no-repeat;
+  background-color: #bdcad9;
+  background-image: linear-gradient(315deg, #bdcad9 0%, #e1dada 74%);
+}
+
+.container {
+  position: relative;
+  max-width: 400px;
+  width: 300px;
+  height: auto;
+  background-color: whitesmoke;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-radius: 11px;
+}
+
+.container img {
+  position: absolute;
+  top: 2.5%;
+  width: 4vw;
+  height: 1.8vh;
+}
+
+.display {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 17px;
+  font-size: 25px;
+  text-align: right;
+  border: none;
+  outline: none;
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 58px);
+}
+
+.buttons button {
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(228, 227, 227);
+}
+
+.buttons button:hover {
+  background-color: lightgray;
+}
+
+.buttons button:active {
+  transform: scale(1.2);
+}
+
+.btn-red {
+  color: maroon;
+}
+
+.btn-op {
+  color: #2f9fff;
+}
+
+@media (max-width: 992px) {
+  .container img {
+    width: 6vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .container img {
+    width: 7vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .container img {
+    width: 11vw;
+  }
+}
